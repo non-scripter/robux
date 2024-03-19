@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuck You Skid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #fuckYouSkidButton {
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #fuckYouSkidMessage {
+            display: none;
+            font-size: 0px;
+            color: #ff0000;
+            transition: font-size 2s linear;
+        }
+    </style>
+</head>
+<body>
+    <h1>CLICK FOR REWARDS 🤑</h1>
+    <button id="fuckYouSkidButton">Click me</button>
+    <p id="fuckYouSkidMessage"></p>
+    <script>
+        document.getElementById("fuckYouSkidButton").addEventListener("click", function() {
+            document.getElementById("fuckYouSkidMessage").style.display = "block";
+            document.getElementById("fuckYouSkidMessage").innerText = "Fuck you skid";
+            setTimeout(function() {
+                document.getElementById("fuckYouSkidMessage").style.fontSize = "100px";
+            }, 100);
+        });
+    </script>
+</body>
+</html>

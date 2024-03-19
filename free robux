@@ -3,36 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuck You Skid</title>
+    <title>CLICK FOR REWARDS 🤑</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background: linear-gradient(45deg, hsl(0, 100%, 50%), hsl(30, 100%, 50%), hsl(60, 100%, 50%), hsl(90, 100%, 50%), hsl(120, 100%, 50%), hsl(150, 100%, 50%), hsl(180, 100%, 50%), hsl(210, 100%, 50%), hsl(240, 100%, 50%), hsl(270, 100%, 50%), hsl(300, 100%, 50%), hsl(0, 100%, 50%));
+            background-size: 400% 400%;
+            animation: Gradient 15s ease infinite;
+            color: #ff0000;
         }
-        #fuckYouSkidButton {
+        #freeMoneyButton {
             font-size: 24px;
             padding: 10px 20px;
             cursor: pointer;
+            background-color: #ff0000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.5s linear;
         }
-        #fuckYouSkidMessage {
+        #freeMoneyButton:hover {
+            background-color: #ff6347;
+        }
+        #freeMoneyMessage {
             display: none;
             font-size: 0px;
             color: #ff0000;
             transition: font-size 2s linear;
+            animation: Spin 0.5s linear infinite;
+        }
+        #freeMoneyMessage:nth-child(3) {
+            animation-iteration-count: 3;
+        }
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        @keyframes Spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 <body>
     <h1>CLICK FOR REWARDS 🤑</h1>
-    <button id="fuckYouSkidButton">Click me</button>
-    <p id="fuckYouSkidMessage"></p>
+    <button id="freeMoneyButton">Click me</button>
+    <p id="freeMoneyMessage">FUCK YOU SKID</p>
+    <p id="freeMoneyMessage">FUCK YOU SKID</p>
+    <p id="freeMoneyMessage">FUCK YOU SKID</p>
     <script>
-        document.getElementById("fuckYouSkidButton").addEventListener("click", function() {
-            document.getElementById("fuckYouSkidMessage").style.display = "block";
-            document.getElementById("fuckYouSkidMessage").innerText = "Fuck you skid";
+        document.getElementById("freeMoneyButton").addEventListener("click", function() {
+            document.getElementById("freeMoneyMessage").style.display = "block";
             setTimeout(function() {
-                document.getElementById("fuckYouSkidMessage").style.fontSize = "100px";
-            }, 100);
+                document.getElementById("freeMoneyMessage").style.fontSize = "90px";
+            }, 2000); // 
         });
     </script>
 </body>
